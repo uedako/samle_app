@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: db_sample_app
+  database: db_sample_app_developer
   pool: 5
   username: rails_tr
   password: rails_tr
@@ -46,7 +46,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: db_sample_app
+  database: db_sample_app_test
   pool: 5
   username: rails_tr
   password: rails_tr
