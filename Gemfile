@@ -4,10 +4,14 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.0.1'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
   gem 'pg', '0.15.1'
   gem 'rspec-rails', '2.13.1'
+  gem 'spring'
 end
 
 group :test do
