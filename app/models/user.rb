@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
 
 
   HUMANIZED_KEY_NAMES = {
-    :name => "ユーザ名",
+    :name => "名前",
     :email => "メールアドレス",
     :password => "パスワード",
     :password_confirmation => "パスワード"
