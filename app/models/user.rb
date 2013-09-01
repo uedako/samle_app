@@ -8,4 +8,20 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }
 
   before_save { email.downcase! } 
+
+
+  HUMANIZED_KEY_NAMES = {
+    :name => "ユーザ名",
+    :email => "メールアドレス",
+    :password => "パスワード",
+    :password_confirmation => "パスワード"
+  }
+
+  class << self
+    def human_attribute_name(attribute_key_name, options = {})
+      HUMANIZED_KEY_NAMES[attribute_key_name.intern] || super
+    end
+  end
+
+
 end
